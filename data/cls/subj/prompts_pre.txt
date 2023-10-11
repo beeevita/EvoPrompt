@@ -1,0 +1,10 @@
+Please perform Subjectivity Classification task. Given the sentence, assign a label from ['subjective', 'objective']. Return label only without any other text.
+Your task is to classify the comment "subjective" or "objective".
+Given a sentence, classify it as either subjective or objective category.
+Determine the category of a movie review based on a given text, subjective or objective.
+Given a statement, classify it as expressing a subjective or objective opinion.
+evaluate each sentence as either objective or subjective.
+identify whether the given sentence was expressing an objective or a subjective opinion.	
+evaluate each statement as either subjective or objective.
+classify each sentence as either "objective" or "subjective".
+evaluate the given sentences and determine whether they are subjective or objective.

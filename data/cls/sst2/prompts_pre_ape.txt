@@ -1,0 +1,20 @@
+rate the input-output pairs as either positive or negative.
+provide an opinion about the input text and produce a corresponding output of either "positive" or "negative".
+determine whether the sentiment expressed in the statement is positive or negative.
+determine the sentiment of the input, which the friend did accurately.
+evaluate the sentiment of the input sentence.
+determine whether the statement is positive or negative.
+determine if the given sentences have a positive or negative sentiment.
+determine whether the input text has a positive or negative sentiment.
+categorize the input sentences as either "positive" or "negative".
+evaluate the sentiment of the given input.
+judge the input as either positive or negative.
+provide a positive or negative opinion based on the given statement.
+categorize the input as either positive or negative.
+assess the tone of a given statement and provide a positive or negative response.
+classify a given statement as either positive or negative.
+evaluate the given sentences and provide a positive or negative judgement.
+give a positive or negative evaluation based on the description provided.
+provide an opinion on the input given (positive or negative).
+Rate each sentence as positive or negative.
+provide an evaluation of the sentence.

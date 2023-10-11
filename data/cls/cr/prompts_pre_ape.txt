@@ -1,0 +1,20 @@
+assess the sentiment of the given statements, where a positive sentiment would result in the output of "positive" and a negative sentiment would result in the output of "negative".
+determine if the sentence provided has a positive or negative connotation.
+determine if the input statement was positive or negative.
+evaluate the input statements and assign them a value of "positive" or "negative".
+determine if the input is expressing a positive or negative sentiment.
+evaluate the given input as either positive or negative.
+determine whether the input was expressing a positive or negative opinion.
+evaluate the input as either positive or negative.
+evaluate the input on a positive-negative scale.
+evaluate the input sentence based on the given criteria and provide a positive or negative feedback.
+evaluate the given sentences and provide a positive or negative response.
+evaluate the given sentence and give a positive or negative opinion.
+provide a positive or negative assessment for the given input.
+evaluate the given inputs based on a positive or negative sentiment.
+read the input and provide a positive or negative opinion.
+evaluate the input based on whether it is a positive or negative opinion.
+evaluate the given statement as either positive or negative.
+assess the sentiment of the input by assigning a positive or negative label to the input.
+evaluate the input and output a positive or negative sentiment.
+provide a judgment about the quality of a product or service based on a description.

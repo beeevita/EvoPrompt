@@ -1,0 +1,20 @@
+classify each input-output pair as either "positive" or "negative" based on the content of the input sentence. The friend correctly classified each input-output pair as either "positive" or "negative."
+identify the sentiment of each input-output pair, which the friend accurately did.
+identify the sentiment of the given text as either "positive" or "negative".
+identify the sentiment expressed in the statement.
+read the statement and determine if it is expressing a positive or negative opinion.
+rate the input as either "positive" or "negative".
+identify the sentiment of the sentence: positive or negative.
+evaluate the sentence according to whether it is a positive or negative opinion.
+produce a sentiment classification for each input.
+determine the sentiment of the statement, i.e. to decide if it was positive or negative.
+assign a positive or negative rating to a review of a movie or television show.
+evaluate the given sentences and provide a positive or negative opinion.
+classify each input as either positive or negative.
+give a positive or negative evaluation of the given statement.
+rate the given statements as either positive or negative.
+provide an opinion (positive or negative) on the given input.
+provide a positive or negative sentiment in response to a given input.
+provide an opinion (positive or negative) based on the input provided.
+provide a judgment (positive or negative) based on the descriptions given in the inputs.
+produce output (in this case a positive or negative judgment) based on the input (in this case a statement about a movie or book).

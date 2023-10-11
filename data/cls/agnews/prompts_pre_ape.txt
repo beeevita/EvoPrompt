@@ -1,0 +1,20 @@
+identify the category of each input (e.g. Tech, Sports, World, Business).
+identify the category (tech, sports, world, business) of the given information.
+categorize the articles according to their topic: Tech, Sports, World, Business.
+classify each input into one of the following categories: Tech, Sports, World, or Business.
+identify the category (e.g. sports, tech, business, etc.) of each news article.
+identify the category of the given news article, which the friend correctly identified for all five input-output pairs.
+identify the category of the text (e.g. Technology, Sports, World, Business).
+provide the category for the given news article.
+identify the type of news article (Tech, Business, Sports) based on the given summary.
+classify the input into one of three categories (Tech, Business, or Sports).
+identify the appropriate category for each article.
+identify the category of the article.
+correctly identify the category for each of the inputs, given the following categories: Tech, Business, Sports.
+identify the type of news article based on the given input.
+classify the given information into one of three categories: tech, business, or sports.
+classify each input-output pair according to the topic.
+identify the topic of the text.
+determine the topic of the given text.
+identify the topic of a given article.
+identify the category of the article.

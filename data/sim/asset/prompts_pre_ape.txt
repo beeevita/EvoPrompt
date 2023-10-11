@@ -1,0 +1,10 @@
+produce input-output pairs that are grammatically correct, but also to rephrase the input sentence.
+simplify and clarify sentences, while maintaining the same meaning.
+simplify the language by removing redundant information.
+simplify complex sentences and eliminate unnecessary words or phrases.
+rephrase the sentence given to make it clearer and more concise.
+reword sentences to make them more concise.
+simplify the given sentences.
+simplify and restate the information in the given input.
+produce input-output pairs in which the output is a rephrased version of the input.
+edit the input into simpler language.

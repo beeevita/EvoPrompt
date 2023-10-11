@@ -1,0 +1,10 @@
+Given the English sentence, the simplification of the sentence is
+Simplify the English sentence.
+Simplify the text.
+Please simplify the English sentence.
+Give the simplification of the following English sentence.
+Make the given English sentence simpler.
+Given a sentence, simplify it so it can be understood by non-native English speakers.
+I want you to replace my complex sentence with simple sentence. Keep the meaning same, but make them simpler.
+Simplify the above sentence without changing meaning.
+Rewrite the input text into simpler text.

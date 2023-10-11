@@ -1,0 +1,20 @@
+For each input, provide an output that describes the type of information being requested (e.g. Description, Entity, Human, etc.)"
+identify the type of answer associated with each question (e.g. Description, Entity, or Human).
+identify the type of input (i.e. description, entity, or human) and provide the corresponding type of output.
+For each input, provide an output that indicates whether the input is asking for a description, an entity, or a human."
+identify the type of answer (description, entity, or human) that should be given to each question.
+provide an answer type for each input: either a number, description, or entity.
+identify the type of the input and provide the corresponding output, i.e. "Description" for questions that seek information about a description, "Entity" for questions that seek information about an entity, and "Human" for questions that seek information about
+provide the type of information being requested, such as a number, description, or entity.
+provide an answer type (e.g., number, entity, description) for the given questions.
+ask a question and then provide the appropriate label for the answer ("Description", "Entity", or "Human").
+provide an appropriate response category (Number, Description, Entity) for each question.
+provide an answer type corresponding to each question. The answer type should indicate what type of information is expected in the answer to the question. For example, the answer to "When did Charles Lindbergh die?" should be a number (the year).
+identify the type of output (number, description, entity, etc.) that would answer the given input.
+identify the type of response (e.g. number, description, entity) that should be given for each of the questions.
+identify the type of answer (i.e. number, description, or entity) to be provided for each given question.
+identify the type of answer (number, description, entity) that would be needed to answer each question.
+identify the type of answer that each input requires.
+determine whether the question being asked is asking for a description or a specific entity.
+provide the appropriate type of response for each question - either a number, a description, or an entity.
+determine whether the input was asking for a description or for the name of a person or entity, and to provide the appropriate output.

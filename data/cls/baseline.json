@@ -1,0 +1,27 @@
+{
+    "mi": 
+        {"sst2": "Please perform Sentiment Classification task. Given the sentence, assign a sentiment label from ['negative', 'positive']. Return label only without any other text.",
+"sst-5": "Please perform Sentiment Classification task. Given the sentence, assign a sentiment label from ['terrible', 'bad', 'okay', 'good', 'great']. Return label only without any other text.",
+    "mr": "Please perform Sentiment Classification task. Given the sentence, assign a sentiment label from ['negative', 'positive']. Return label only without any other text.",
+    "cr": "Please perform Sentiment Classification task. Given the sentence, assign a sentiment label from ['negative', 'positive']. Return label only without any other text.",
+    "agnews": "Please perform News Classification task. Given the news item, assign a label from ['World', 'Sports', 'Business', 'Tech']. Return label only without any other text.",
+    "trec": "Please perform Question Classification task. Given the question, assign a label from ['Description', 'Entity', 'Expression', 'Human', 'Location', 'Number']. Return label only without any other text.",
+    "subj": "Please perform Subjectivity Classification task. Given the sentence, assign a label from ['subjective', 'objective']. Return label only without any other text."
+},
+"ni":{
+    "sst2": "In this task, you are given sentences from movie reviews. The task is to classify a sentence as \"great\" if the sentiment of the sentence is positive or as \"terrible\" if the sentiment of the sentence is negative.",
+    "mr": "In this task, you are given sentences from movie reviews. The task is to classify a sentence as \"great\" if the sentiment of the sentence is positive or as \"terrible\" if the sentiment of the sentence is negative.",
+    "cr": "In this task, you are given sentences from movie reviews. The task is to classify a sentence as \"great\" if the sentiment of the sentence is positive or as \"terrible\" if the sentiment of the sentence is negative.",
+    "agnews": "In this task, you are given a news article. Your task is to classify the article to one out of the four topics \"World\", \"Sports\", \"Business\", \"Tech\" if the article\"s main topic is relevant to the world, sports, business, and technology, correspondingly. If you are not sure about the topic, choose the closest option.",
+    "trec": "You are given a question. You need to detect which category better describes the question. Answer with \"Description\", \"Entity\", \"Expression\", \"Human\", \"Location\", and \"Number\".",
+    "subj": "In this task, you are given sentences from reviews. The task is to classify a sentence as \"subjective\" if the opinion of the sentence is subjective or as \"objective\" if the opinion of the sentence is objective." ,
+    "sst-5": "In this task, you are given sentences from movie reviews. Based on the given review, classify it to one of the five classes: (1) terrible, (2) bad, (3) okay, (4) good, and (5) great."
+},
+    "ps":{
+        "sst2": "Does the following sentence have a positive or negative sentiment?",
+        "agnews":"What label best describes this news article?", 
+        "trec": "Which category best describes the following question? Choose from the following list: Description, Entity, Abbreviation, Person, Quantity, Location." 
+    }
+
+
+}

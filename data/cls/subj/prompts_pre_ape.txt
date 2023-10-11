@@ -1,0 +1,20 @@
+determine whether the input sentences were subjective or objective. The friend correctly classified the sentences as either subjective or objective.
+determine whether each statement was subjective (based on opinion) or objective (based on facts).
+classify each sentence as either "objective" or "subjective".
+identify whether the given sentence was expressing an objective or a subjective opinion.
+evaluate each statement as either subjective or objective.
+evaluate a given statement based on its subjective or objective qualities.
+determine whether the sentence provided was subjective or objective.
+evaluate each sentence as either objective or subjective.
+determine whether the given statements were subjective or objective.
+evaluate the given sentences and determine whether they are subjective or objective.
+evaluate the sentence and provide a subjective or an objective response.
+evaluate the input using a subjective or objective scale.
+determine whether the statement is subjective or objective.
+evaluate the given statement and categorize it as either subjective or objective.
+identify whether the given statement was subjective or objective.
+identify whether the given statement is subjective or objective.
+classify each statement as either subjective or objective.
+produce input-output pairs that illustrate the subjectivity of reviews and opinions.
+provide an opinion of the given statements, and in all cases, the friend provided a subjective opinion.
+provide an assessment of the given input based on personal opinion.

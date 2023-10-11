@@ -1,0 +1,16 @@
+Please perform Sentiment Classification task. Given the sentence, assign a sentiment label from ['terrible', 'bad', 'okay', 'good', 'great']. Return label only without any other text.
+In this task, you are given movie reviews. Based on it, classify it to one of the ﬁve classes: (1) terrible, (2) bad, (3) okay, (4) good, and (5) great.
+Based on the given movie review provided to you and classify it into one of five categories: terrible, bad, okay, good, or great.
+Your job is to evaluate the review and classify it as one of five classes: terrible, bad, okay, good, or great.
+Examine the comment provided and classify it into one of five categories: terrible, bad, okay, good, or great.
+Your objective is to analyze the movie review and allocate it to one of five categories, from terrible to great.
+Classify the movie review into one of five categories based on their quality: terrible, bad, okay, good, or great.
+Assess the movie review and categorize it into one of five classes, ranging from terrible to great.
+Categorize the movie review provided into one of five degrees based on the sentiment: terrible, bad, okay, good, or great.
+Your goal is to analyze the movie review and assign it to one of five categories, ranging from terrible to great.
+Based on the movie review provided, assign the moviw to one of five categories: terrible, bad, okay, good, or great.
+Your responsibility is to categorize the movie review provided to you into one of five categories based on the sentiment: terrible, bad, okay, good, or great.
+Determine the sentiment of the movie review and choose from terrible, bad, okay, good and great to describe the movie.
+Classify the movie review provided to you into one of five categories based on the sentiment: terrible, bad, okay, good, or great.
+Your objective is to evaluate the the sentiment of the movie review and categorize it into one of five classes, ranging from terrible to great.
+Analyze the sentence and categorize it into one of five categories based on the sentiment: terrible, bad, okay, good, or great.

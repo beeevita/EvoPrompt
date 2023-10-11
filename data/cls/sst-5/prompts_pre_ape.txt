@@ -1,0 +1,20 @@
+evaluate a movie or a book based on its description. The friend provided a rating for the movie or book (okay, great, bad, and terrible) based on the description.
+provide a reaction for each of the input-output pairs.
+have your friend rate the movie they had just watched by providing a short response (e.g. great, okay, bad, or terrible) based on the plot summary they were given.
+provide feedback on the input-output pairs, and the friend provided feedback that ranged from "great" to "okay" to "bad".
+use the input-output pairs to evaluate the quality of the text. The input-output pairs indicate that the text is generally of okay quality, with one instance of a bad quality.
+provide feedback on the input-output pairs, and the friend provided feedback that was either "great," "okay," or "bad."
+provide feedback on the input-output pairs, and the feedback for the five given pairs is "great", "okay" (three times), and "bad".
+provide feedback on the input-output pairs given. In this case, the feedback is that the first three inputs are "great", the fourth is "okay" and the last is "bad".
+evaluate the input-output pairs based on the quality of the film that was being discussed.
+provide a reaction to a description of a movie, with the reaction being either "okay", "great", "bad" or "terrible" depending on the description.
+provide feedback based on the input. In this case, the friend gave positive feedback to the first three input-output pairs and negative feedback to the fourth input-output pair.
+give feedback on the input-output pairs based on their accuracy or quality. In this case, the feedback was "great," "okay," and "bad" depending on the accuracy or quality of the input-output pair.
+evaluate the input-output pairs based on the quality of the output. Based on the output given, the friend's evaluations are accurate.
+evaluate each sentence with either "good" or "bad". Based on the input-output pairs provided, it appears that the friend understood the instruction correctly.
+rate the output, and the friend appears to be rating the input based on how strongly they agree or disagree with the statement.
+provide feedback on a movie review.
+evaluate the given input, and the friend correctly provided the appropriate responses based on the descriptions given.
+provide a reaction for the input-output pairs based on the content of the input.
+provide a response to each input-output pair based on their sentiment.
+provide a response to each sentence that indicates whether the opinion expressed is positive, negative, or neutral.

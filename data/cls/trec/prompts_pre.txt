@@ -1,0 +1,17 @@
+Please perform Question Classification task. Given the question, assign a label from ['Description', 'Entity', 'Expression', 'Human', 'Location', 'Number']. Return label only without any other text
+Determine the type of the given question and choose from Description, Entity, Expression, Human, Location and Number.
+Your task is to choose a type of the question, from Description, Entity, Expression, Human, Location and Number.
+Analyze an English question and identify which category it belongs to: Description, Entity, Expression, Human, Location, or Number.
+You are given a question. You need to detect which category better describes the question. Answer with "Description", "Entity", "Expression", "Human", "Location", and "Number".
+Please select the correct classification for this sentence: Description, Entity, Expression, Human, Location, or Number. 
+Classify this sentence into one of these categories: Description, Entity, Expression, Human, Location, or Number.
+Identify the most suitable category for this sentence: Description, Entity, Expression, Human, Location, or Number.
+Classify this sentence based on the provided categories: Description, Entity, Expression, Human, Location, or Number.
+Determine the category that best describes this sentence: Description, Entity, Expression, Human, Location, or Number. 
+Choose the appropriate classification for this sentence: Description, Entity, Expression, Human, Location, or Number.
+Assign this sentence to one of these categories: Description, Entity, Expression, Human, Location, or Number.
+Using the following categories, classify this sentence: Description, Entity, Expression, Human, Location, or Number. 
+Please pick the category that matches this sentence: Description, Entity, Expression, Human, Location, or Number.
+Identify the category that corresponds to this sentence: Description, Entity, Expression, Human, Location, or Number.
+Classify this sentence by choosing one of the following options: Description, Entity, Expression, Human, Location, or Number.
+Which category best describes the following question? Choose from the following list: Description, Entity, Expression, Human, Location, Number.

@@ -1,0 +1,245 @@
+{
+    "instruction": {
+        "opt": "Instruction: <prompt>",
+        "vicuna": "",
+        "gpt": "<prompt>",
+        "alpaca": "Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.\n\n### Instruction:\n<prompt>",
+        "vicuna1": "A chat between a curious user and an artificial intelligence assistant.\n###USER:\n"
+    },
+    "cls": {
+        "icl": {
+            "opt": {
+                "sst2": [
+                    "Input: <input>\nOutput: <output>",
+                    "Input: one of the year 's best films , featuring an oscar-worthy performance by julianne moore .\nOutput: positive\n\nInput: it 's just merely very bad .\nOutput: negative\n\nInput: <input>\nOutput: "
+                ],
+                "cr": [
+                    "Input: <input>\nOutput: <output>",
+                    "Input: great phone , i 'd buy another .\nOutput: positive\n\nInput: this product is absolutely not ready for release .\nOutput: negative\n\nInput: <input>\nOutput: "
+                ],
+                "mr": [
+                    "Input: <input>\nOutput: <output>",
+                    "Input: wise and deadpan humorous .\nOutput: positive\n\nInput: shamelessly sappy and , worse , runs away from its own provocative theme .\nOutput: negative\n\nInput: <input>\nOutput: "
+                ],
+                "sst-5": [
+                    "Input: <input>\nOutput: <output>",
+                    "Input: the heavy-handed film is almost laughable as a consequence .\nOutput: terrible\n\nInput: movie fans , get ready to take off ... the other direction .\nOutput: bad\n\nInput: a movie that hovers somewhere between an acute character study and a trite power struggle .\nOutput: okay\n\nInput: escaping the studio , piccoli is warmly affecting and so is this adroitly minimalist movie .\nOutput: good\n\nInput: seldom has a movie so closely matched the spirit of a man and his work .\nOutput: great\n\nInput: <input>\nOutput: "
+                ],
+                "agnews": [
+                    "Input: <input>\nOutput: <output>",
+                    "Input: Arafat expulsion has never been closer: Israeli FM JERUSALEM - Foreign Minister Silvan Shalom said Thursday that Israel had never been closer to expelling veteran Palestinian leader Yasser Arafat from his West Bank headquarters.\nOutput: World\n\nInput: Two US runners reach 100 hurdles final ATHENS, Greece - World champion Perdita Felicien and two United States runners reached the final of the 100-meter hurdles Monday, an event that lost Gail Devers to injury a day earlier.\nOutput: Sports\n\nInput: U.S., EU Spar Over Airbus, Boeing Aid  WASHINGTON (Reuters) - The United States and Europe on  Wednesday filed tit-for-tat World Trade Organization complaints  over billions of dollars in subsidies for top aircraft  manufacturers Airbus and Boeing.\nOutput: Business\n\nInput: Veritas buys KVault Software in \\$225M deal Storage and backup application vendor Veritas Software Corp. is acquiring e-mail archiving vendor KVault Software Ltd. (KVS) to bolster its offerings to customers.\nOutput: Tech\n\nInput: <input>\nOutput: "
+                ],
+                "trec": [
+                    "Input: <input>\nOutput: <output>",
+                    "Input: What made Jane Goodall famous ?\nOutput: Decription\n\nInput: Which sex is denied voting rights in Kuwait ?\nOutput: Entity\n\nInput: What does RCA stand for ?\nOutput: Expression\n\nInput: Who was Lacan ?\nOutput: Human\n\nInput: What attracts tourists to Reims ?\nOutput: Location\n\nInput: What is the gestation period for human pregnancies ?\nOutput: Number\n\nInput: <input>\nOutput: "
+                ],
+                "subj": [
+                    "Input: <input>\nOutput: <output>",
+                    "Input: a cold-hearted judge finds out when a seemingly crazy young couple break into his house and take him captive .\nOutput: objective\n\nInput: a heartening tale of small victories and enduring hope .\nOutput: subjective\n\nInput: <input>\nOutput: "
+                ],
+                "liar": [
+                    "Input: <input>\nOutput: <output>",
+                    "Input: Statement: Says 21,000 Wisconsin residents got jobs in 2011, but 18,000 of them were in other states.. Job title: nan. State: nan. Party: democrat. Context: remarks\nOutput: No\n\nInput: Statement: Rick Perry has advocated abandoning Social Security, scuttling Medicaid and ending the federal income tax.. Job title: Columnist. State: District of Columbia. Party: none. Context: a politics column.\nOutput: Yes\n\nInput: <input>\nOutput: "
+                ]
+            },
+            "alpaca": {
+                "sst2": [
+                    "### Input:\n<input>\n\n### Response:\n<output>",
+                    "### Input:\ngreat phone , i 'd buy another .\n\n### Response:\npositive\n\n### Input:\nit 's just merely very bad .\n\n### Response:\nnegative\n\n### Input:\n<input>\n\n### Response:\n<output>"
+                ],
+                "cr": [
+                    "### Input:\n<input>\n\n### Response:\n<output>",
+                    "### Input:\none of the year 's best films , featuring an oscar-worthy performance by julianne moore .\n\n### Response:\npositive\n\n### Input:\nthis product is absolutely not ready for release .\n\n### Response:\nnegative\n\n### Input:\n<input>\n\n### Response:\n<output>"
+                ],
+                "mr": [
+                    "### Input:\n<input>\n\n### Response:\n<output>",
+                    "### Input:\nwise and deadpan humorous .\n\n### Response:\npositive\n\n### Input:\nshamelessly sappy and , worse , runs away from its own provocative theme .\n\n### Response:\nnegative\n\n### Input:\n<input>\n\n### Response:\n<output>"
+                ],
+                "sst-5": [
+                    "### Input:\n<input>\n\n### Response:\n<output>",
+                    "### Input:\nthe heavy-handed film is almost laughable as a consequence .\n\n### Response:\nterrible\n\n### Input:\nmovie fans , get ready to take off ... the other direction .\n\n### Response:\nbad\n\n### Input:\na movie that hovers somewhere between an acute character study and a trite power struggle .\n\n### Response:\nokay\n\n### Input:\nescaping the studio , piccoli is warmly affecting and so is this adroitly minimalist movie .\n\n### Response:\ngood\n\n### Input:\nseldom has a movie so closely matched the spirit of a man and his work .\n\n### Response:\ngreat\n\n### Input:\n<input>\n\n### Response:\n<output>"
+                ],
+                "agnews": [
+                    "### Input:\n<input>\n\n### Response:\n<output>",
+                    "### Input:\nArafat expulsion has never been closer: Israeli FM JERUSALEM - Foreign Minister Silvan Shalom said Thursday that Israel had never been closer to expelling veteran Palestinian leader Yasser Arafat from his West Bank headquarters.\n\n### Response:\nWorld\n\n### Input:\nTwo US runners reach 100 hurdles final ATHENS, Greece - World champion Perdita Felicien and two United States runners reached the final of the 100-meter hurdles Monday, an event that lost Gail Devers to injury a day earlier.\n\n### Response:\nSports\n\n### Input:\nU.S., EU Spar Over Airbus, Boeing Aid  WASHINGTON (Reuters) - The United States and Europe on  Wednesday filed tit-for-tat World Trade Organization complaints  over billions of dollars in subsidies for top aircraft  manufacturers Airbus and Boeing.\n\n### Response:\nBusiness\n\n### Input:\nVeritas buys KVault Software in \\$225M deal Storage and backup application vendor Veritas Software Corp. is acquiring e-mail archiving vendor KVault Software Ltd. (KVS) to bolster its offerings to customers.\n\n### Response:\nTech\n\n### Input:\n<input>\n\n### Response:"
+                ],
+                "trec": [
+                    "### Input:\n<input>\n\n### Response:\n<output>",
+                    "### Input:\nWhat made Jane Goodall famous ?\n\n### Response:\nDecription\n\n### Input:\nWhich sex is denied voting rights in Kuwait ?\n\n### Response:\nEntity\n\n### Input:\nWhat does RCA stand for ?\n\n### Response:\nExpression\n\n### Input:\nWho was Lacan ?\n\n### Response:\nHuman\n\n### Input:\nWhat attracts tourists to Reims ?\n\n### Response:\nLocation\n\n### Input:\nWhat is the gestation period for human pregnancies ?\n\n### Response:\nNumber\n\n### Input:\n<input>\n\n### Response:\n<output>"
+                ],
+                "subj": [
+                    "### Input:\n<input>\n\n### Response:\n<output>",
+                    "### Input:\na cold-hearted judge finds out when a seemingly crazy young couple break into his house and take him captive .\n\n### Response:\nobjective\n\n### Input:\na heartening tale of small victories and enduring hope .\n\n### Response:\nsubjective\n\n### Input:\n<input>\n\n### Response:\n<output>"
+                ]
+            },
+            "gpt": {
+                "sst-5": [
+                    "Sentence: <input>\nLabel: <output>",
+                    "Sentence: the heavy-handed film is almost laughable as a consequence .\nLabel: terrible\n\nSentence: movie fans , get ready to take off ... the other direction .\nLabel: bad\n\nSentence: a movie that hovers somewhere between an acute character study and a trite power struggle .\nLabel: okay\n\nSentence: escaping the studio , piccoli is warmly affecting and so is this adroitly minimalist movie .\nLabel: good\n\nSentence: seldom has a movie so closely matched the spirit of a man and his work .\nLabel: great\n\nSentence: <input>\nLabel: "
+                ],
+                "trec": [
+                    "Sentence: <input>\nLabel: <output>",
+                    "Sentence: What made Jane Goodall famous ?\nLabel: Decription\n\nSentence: Which sex is denied voting rights in Kuwait ?\nLabel: Entity\n\nSentence: What does RCA stand for ?\nLabel: Expression\n\nSentence: Who was Lacan ?\nLabel: Human\n\nSentence: What attracts tourists to Reims ?\nLabel: Location\n\nSentence: What is the gestation period for human pregnancies ?\nLabel: Number\n\nSentence: <input>\nLabel: "
+                ]
+            },
+            "vicuna": {
+                "sst2": [
+                    "Sentence: <input>\nThe sentiment is <output>",
+                    "Sentence: one of the year 's best films , featuring an oscar-worthy performance by julianne moore .\nThe sentiment is positive\n\nSentence: it 's just merely very bad .\nThe sentiment is negative\n\nSentence: <input>\nThe sentiment is "
+                ]
+            }
+        }
+    },
+    "sim": {
+        "icl": {
+            "alpaca": {
+                "asset": [
+                    "### Input:\n<input>\n\n### Response:\n<output>",
+                    "### Input:\nHistory Landsberg prison, which is in the town's western outskirts, was completed in 1910.\n\n### Response:\nLandsberg prison is in the west of the town. It was completed in 1910.\n\n### Input:\n<input>\n\n### Response:\n<output>"
+                ],
+                "turkcorpus": [
+                    "### Input:\n<input>\n\n### Response:\n<output>",
+                    "### Input:\nAdjacent counties are Marin ( to the south ) , Mendocino ( to the north ) , Lake ( northeast ) , Napa ( to the east ) , and Solano and Contra Costa ( to the southeast ) .\n\n### Response:\nNeighbhouring countries are Marin , to the south , Mendocino , to the north , Lake northeast , Napa to the east and Solano and Contra Costa to the southeast .\n\n### Input:\n<input>\n\n### Response:\n<output>"
+                ],
+                "wiki-auto": [
+                    "### Input:\n<input>\n\n### Response:\n<output>",
+                    ""
+                ],
+                "jfleg": [
+                    "### Input:\n<input>\n\n### Response:\n<output>",
+                    ""
+                ]
+            },
+            "vicuna": {
+                "asset": [
+                    "<input>\nThe Simplification of the sentence is: <output>",
+                    "Adjacent counties are Marin (to the south), Mendocino (to the north), Lake (northeast), Napa (to the east), and Solano and Contra Costa (to the southeast).\nthe simplification of the sentence is: countries next to it are Marin, Mendocino, Lake, Napa, Solano, and Contra Costa.\n\n<input>\nthe simplification of the sentence is: ",
+                    "Input: History Landsberg prison, which is in the town's western outskirts, was completed in 1910.\nOutput: Landsberg prison is in the west of the town. It was completed in 1910.\n\nInput: <input>\nOutput:<output>"
+                ],
+                "turkcorpus": [
+                    "<input>\nThe Simplification of the sentence is: <output>",
+                    "Input: History Landsberg prison, which is in the town's western outskirts, was completed in 1910.\nOutput: Landsberg prison is in the west of the town. It was completed in 1910.\n\nInput: <input>\nOutput:<output>"
+                ],
+                "wiki-auto": [
+                    "<input>\nThe Simplification of the sentence is: <output>",
+                    "Input: History Landsberg prison, which is in the town's western outskirts, was completed in 1910.\nOutput: Landsberg prison is in the west of the town. It was completed in 1910.\n\nInput: <input>\nOutput:<output>"
+                ]
+            },
+            "vicuna1": {
+                "asset": [
+                    "<input>\n###ASSISTANT:\n <output>",
+                    "Adjacent counties are Marin (to the south), Mendocino (to the north), Lake (northeast), Napa (to the east), and Solano and Contra Costa (to the southeast).\nthe simplification of the sentence is: countries next to it are Marin, Mendocino, Lake, Napa, Solano, and Contra Costa.\n\n<input>\nthe simplification of the sentence is: ",
+                    "Input: History Landsberg prison, which is in the town's western outskirts, was completed in 1910.\nOutput: Landsberg prison is in the west of the town. It was completed in 1910.\n\nInput: <input>\nOutput:<output>"
+                ],
+                "turkcorpus": [
+                    "<input>\n###ASSISTANT: <output>",
+                    "Input: History Landsberg prison, which is in the town's western outskirts, was completed in 1910.\nOutput: Landsberg prison is in the west of the town. It was completed in 1910.\n\nInput: <input>\nOutput:<output>"
+                ]
+            },
+            "opt": {
+                "asset": [
+                    "Input: <input>\nOutput:<output>",
+                    ""
+                ],
+                "turkcorpus": [
+                    "Input: <input>\nOutput:<output>",
+                    ""
+                ]
+            },
+            "gpt": {
+                "asset": [
+                    "<input>\nThe Simplification of the sentence is: <output>",
+                    "Adjacent counties are Marin (to the south), Mendocino (to the north), Lake (northeast), Napa (to the east), and Solano and Contra Costa (to the southeast).\nthe simplification of the sentence is: countries next to it are Marin, Mendocino, Lake, Napa, Solano, and Contra Costa.\n\n<input>\nthe simplification of the sentence is: ",
+                    "Input: History Landsberg prison, which is in the town's western outskirts, was completed in 1910.\nOutput: Landsberg prison is in the west of the town. It was completed in 1910.\n\nInput: <input>\nOutput:<output>"
+                ],
+                "turkcorpus": [
+                    "<input>\nThe Simplification of the sentence is: <output>",
+                    "Input: History Landsberg prison, which is in the town's western outskirts, was completed in 1910.\nOutput: Landsberg prison is in the west of the town. It was completed in 1910.\n\nInput: <input>\nOutput:<output>"
+                ]
+            }
+        }
+    },
+    "mt": {
+        "icl": {
+            "alpaca": {
+                "de-en": [
+                    "### Input:\n<input>\n\n### Response:\n<output>",
+                    ""
+                ],
+                "zh-en": [
+                    "### Input:\n<input>\n\n### Response:\n<output>",
+                    ""
+                ]
+            },
+            "gpt": {
+                "ha-en": [
+                    "<input>\nThe translation of the sentence is: <output>",
+                    "Ganduje ya maida martani kan zargin saida otel ɗin Daula - Freedom Radio Nigeria.\nThe translation of the sentence is: Ganduje responds to allegations of selling Daula Hotel - Freedom Radio Nigeria.\n\n<input>\nThe translation of the sentence is: <output>"
+                ],
+                "de-en": [
+                    "<input>\nThe translation of the sentence is: <output>"
+                ],
+                "zh-en": [
+                    "<input>\nThe translation of the sentence is: <output>"
+                ],
+                "en-zh": [
+                    "<input>\n这句话的翻译是: <output>"
+                ]
+            }
+        }
+    },
+    "qa": {
+        "icl": {
+            "gpt": {
+                "gsm8k": [
+                    "Q: <input>\nA: <output>",
+                    "Q: Q: <input>\nA: <output>"
+                ],
+                "addsub": [
+                    "Q: <input>\nA: <output>",
+                    "Q: Q: <input>\nA: <output>"
+                ]
+            },
+            "vicuna": {
+                "gsm8k": [
+                    "<input>\n"
+                ]
+            },
+            "vicuna1": {
+                "gsm8k": [
+                    "<input>\n###ASSISTANt:\n <output>"
+                ]
+            }
+        }
+    },
+    "sum": {
+        "icl": {
+            "gpt": {
+                "sam": [
+                    "<input>\nTL;DR: <output>"
+                ]
+            },
+            "alpaca": {
+                "sam": [
+                    "### Input:\n<input>\n\n### Response:\n",
+                    ""
+                ]
+            }
+        }
+    },
+    "style": {
+        "icl": {
+            "gpt": {
+                "yelp": [
+                    "TODO"
+                ]
+            },
+            "alpaca": {
+                "yelp": [
+                    "### Input:\n<input>\n\n### Response:\n",
+                    ""
+                ]
+            }
+        }
+    }
+}

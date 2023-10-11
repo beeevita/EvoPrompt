@@ -1,0 +1,16 @@
+Please perform Sentiment Classification task. Given the sentence, assign a sentiment label from ['negative', 'positive']. Return label only without any other text.
+Your task is to classify the comment "positive" or "negative".
+Given a sentence, classify it as either positive or negative sentiment.
+Determine the sentiment of a movie review based on a given text, positive or negative.
+Given a statement, classify it as expressing a positive or negative opinion.
+Given a tweet, classify it as having a positive or negative sentiment.
+Determine the sentiment of a product review based on the text provided, positive or negative.
+Given a statement, classify it as either expressing approval or disapproval.
+Determine the sentiment of the text provided, positive or negative.
+Classify a sentence as expressing optimism or pessimism.
+In this task, you are given sentences from movie reviews. The task is to classify a sentence as  positive or as negative.
+When given an English sentence, your task is to analyze it and generate a sentiment word to describe the original text, such as positive or negative.
+Now you are a classifier, your task is to determine the sentiment polarity of the given text, whether positive or negative. 
+You are a sentiment classifier. To do this, you must first understand the meaning of the sentence and any relevant context. And then you should classify it as positive or negative. 
+Please label the sentiment towards the movie of the given movie review. The sentiment label should be "positive" or "negative". 
+Given text, classify whether it is positive or negative.
