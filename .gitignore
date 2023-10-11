@@ -4,9 +4,6 @@ __pycache__/
 *outputs*/
 logs/
 *.bin
-checkpoints/
-scripts/
-output/
 auth.txt
 *.yaml
 *.out
