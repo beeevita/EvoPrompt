@@ -79,21 +79,31 @@ For the pipeline of EvoPrompt, there are mainly three steps as follows, while fo
 ## Code Strucutre 
 
 ```
-- automatic_prompt_engineer
-    |- configs
-    |- evaluation
-    |- ape.py
-    |- config.py
-    |- evaluate.py
-    |- generate.py
-    |- llm.py
-    |- template.py
-- experiments: scripts for experiments
-    |- configs
-    |- data
-    |- evaluation
-    |- run_instruction_induction.py
-    |- run_truthful_qa.py
+.
+├── LICENSE
+├── README.md
+├── args.py
+├── auth.yaml
+├── data  # dataset, templates used
+│   ├── cls
+│   ├── sim
+│   ├── sum
+│   ├── template_de.py  # templates of prompt evolution by DE
+│   ├── template_ga.py  # templates of prompt evolution by GA
+│   ├── template_v2.json  # templates for task implementation
+│   └── templates.py  # wrapper
+├── dataset.py  # dataset class
+├── evaluator.py  # evaluators on different tasks
+├── evoluter.py  # DE, GA, APE
+├── evolution.py  # DE, GA, APE
+├── get_result.py  
+├── infer.py  # main file for inference
+├── llm_client.py  # LLM query
+├── metrics.py  # metric calculation
+├── requirements.txt
+├── run.py  # main file for evolution
+├── scripts  # scripts to run the code
+└── utils.py  # auxiliary functions
 ```
 
 ## 🧩 Possible Extension
@@ -104,7 +114,7 @@ For the pipeline of EvoPrompt, there are mainly three steps as follows, while fo
 
 ## Acknowledgements
 
-Our codebase is based on the following repo. Thanks for open-sourcing!
+Our codebase is based on the following repos. Thanks for open-sourcing!
 
 - [CoT-hub](https://github.com/FranxYao/chain-of-thought-hub)
 - [APE](https://github.com/keirp/automatic_prompt_engineer)
