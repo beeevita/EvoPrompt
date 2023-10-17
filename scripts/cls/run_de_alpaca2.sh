@@ -10,10 +10,11 @@ POPSIZE=10
 SEED=5
 TEMPLATE=v1
 INITIAL_MODE=para_topk
+LLM_TYPE=davinci
 
-for DATASET in sst2
+for DATASET in cr
 do
-OUT_PATH=outputs/cls/$DATASET/alpaca/all/de/bd${BUDGET}_top${POPSIZE}_${INITIAL_MODE}_init/${TEMPLATE}/turbo
+OUT_PATH=outputs/cls/$DATASET/alpaca/all/de/bd${BUDGET}_top${POPSIZE}_${INITIAL_MODE}_init/${TEMPLATE}/$LLM_TYPE
 for SEED in 5 10 15
 do
 python run.py \
@@ -28,7 +29,7 @@ python run.py \
     --popsize $POPSIZE \
     --position demon \
     --evo_mode de \
-    --llm_type turbo \
+    --llm_type $LLM_TYPE \
     --setting default \
     --write_step 5 \
     --initial all \

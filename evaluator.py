@@ -46,12 +46,8 @@ class Evaluator(object):
         print(self.template)
         self.model_name = args.language_model.split("/")[-1]
 
-        if args.client:
-            self.client = LLMClient()
-            self.llm_config = {}
-        else:
-            self.client = None
-            self.llm_config = llm_init(f"./auth.yaml", args.llm_type, args.setting)
+        self.client = None
+        self.llm_config = llm_init(f"./auth.yaml", args.llm_type, args.setting)
 
         if "gpt" in args.language_model:
             self.tokenizer = None

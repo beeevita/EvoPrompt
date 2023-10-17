@@ -12,7 +12,7 @@ from utils import (
     k_init_pop
 )
 from infer import evaluate_optimized_prompt
-from llm_client import llm_init, paraphrase, LLMClient, llm_query
+from llm_client import paraphrase, llm_query
 from data.templates import templates
 from data.template_ga import templates_2
 
@@ -173,7 +173,7 @@ class Evoluter:
         client = evaluator.client
         llm_config = evaluator.llm_config
 
-        # test LLM client
+        # test LLM 
         _ = paraphrase(
             sentence="Hi, I am a student.",
             type=args.llm_type,
