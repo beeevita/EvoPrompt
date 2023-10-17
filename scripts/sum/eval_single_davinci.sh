@@ -22,7 +22,7 @@ python infer.py \
     --llm_type davinci \
     --random_data 0 \
     --initial_mode None \
-    --outputs outputs/sum/sam/gpt/eval \
+    --outputs outputs/sum/sam/eval \
     --setting default \
     --content "Summarize the following text."
 done

@@ -9,12 +9,12 @@ BUDGET=10
 POPSIZE=10
 NUM_OF_MANUAL=10
 SEED=5
-TEMPLATE=v9
+TEMPLATE=v1
 initial=all
 
 for dataset in sam
 do
-OUT_PATH=outputs/sum/$dataset/alpaca/all/de/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/${TEMPLATE}-sim-unify/davinci
+OUT_PATH=outputs/sum/$dataset/alpaca/all/de/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/${TEMPLATE}/davinci
 for SEED in 5 10 15
 do
 python run.py \
@@ -37,7 +37,7 @@ python run.py \
     --initial_mode para_topk \
     --cache_path data/sum/$dataset/seed${SEED}/prompts_batched.json \
     --template $TEMPLATE \
-    --setting mt \
+    --setting default \
     --output $OUT_PATH/seed$SEED
 done
 python get_result.py -m -p $OUT_PATH > $OUT_PATH/result.txt

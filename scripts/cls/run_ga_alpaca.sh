@@ -10,10 +10,11 @@ POPSIZE=10
 NUM_OF_MANUAL=10
 SEED=5
 GA=topk
+LLM_TYPE=davinci
 
 for dataset in sst2
 do
-OUT_PATH=outputs/cls/$dataset/alpaca/all/ga/bd${BUDGET}_top${POPSIZE}_para_topk_init/$GA/davinci
+OUT_PATH=outputs/cls/$dataset/alpaca/all/ga/bd${BUDGET}_top${POPSIZE}_para_topk_init/$GA/$LLM_TYPE
 for SEED in 15
 do
 python run.py \
@@ -28,7 +29,7 @@ python run.py \
     --popsize $POPSIZE \
     --position demon \
     --evo_mode ga \
-    --llm_type davinci \
+    --llm_type $LLM_TYPE \
     --setting default \
     --initial all \
     --initial_mode para_topk \

@@ -6,13 +6,12 @@ export CUBLAS_WORKSPACE_CONFIG=:16:8
 
 POPSIZE=10
 BUDGET=10
-ratio=0.5
-template=v9
+template=v1
 initial=all
 
-for dataset in turkcorpus
+for dataset in asset
 do
-OUT_PATH=outputs/sim/$dataset/gpt/$initial/de/bd${BUDGET}_top${POPSIZE}_topk_para_init/$template-sim-unify-cls/davinci
+OUT_PATH=outputs/sim/$dataset/gpt/$initial/de/bd${BUDGET}_top${POPSIZE}_topk_para_init/$template/davinci
 for SEED in 5 10 15
 do
 python run.py \
@@ -31,7 +30,6 @@ python run.py \
     --position pre \
     --evo_mode de \
     --llm_type davinci \
-    --client \
     --initial $initial \
     --initial_mode para_topk \
     --template $template \

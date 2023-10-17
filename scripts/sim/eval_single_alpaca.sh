@@ -23,7 +23,7 @@ python infer.py \
     --num_of_manual $NUM_OF_MANUAL \
     --initial_mode None \
     --random_data 0 \
-    --output output \
+    --output outputs/sim/eval \
     --initial manual \
     --content "Simplify the text."
 done

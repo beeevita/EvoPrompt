@@ -13,8 +13,8 @@ TEMPLATE=v1
 
 for dataset in sam
 do
-OUT_PATH=outputs/sum/$dataset/gpt/all/ga/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/$GA/$TEMPLATE-0905-fix/davinci
-for SEED in 5
+OUT_PATH=outputs/sum/$dataset/gpt/all/ga/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/$GA/$TEMPLATE/davinci
+for SEED in 5 10 15
 do
 python run.py \
     --seed $SEED \
@@ -32,11 +32,10 @@ python run.py \
     --position pre \
     --evo_mode ga \
     --llm_type davinci \
-    --setting mt \
+    --setting default \
     --initial all \
     --initial_mode para_topk \
     --ga_mode $GA \
-    --client \
     --cache_path data/sum/$dataset/seed$SEED/prompts_gpt_tldr.json \
     --template $TEMPLATE \
     --output $OUT_PATH/seed$SEED

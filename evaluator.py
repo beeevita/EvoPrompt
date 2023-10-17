@@ -43,7 +43,7 @@ class Evaluator(object):
             self.template = templates[args.task]["icl"][model][dataset][1]
         else:
             self.template = None
-        print(self.template)
+        # print(self.template)
         self.model_name = args.language_model.split("/")[-1]
 
         self.client = None

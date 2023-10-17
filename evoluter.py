@@ -9,7 +9,7 @@ from utils import (
     get_final_prompt,
     load_cls_data,
     extract_numbers,
-    k_init_pop
+    k_init_pop,
 )
 from infer import evaluate_optimized_prompt
 from llm_client import paraphrase, llm_query
@@ -59,9 +59,7 @@ class Evoluter:
                 )
             )
             for score, prompt, mark in zip(self.scores, self.population, self.marks):
-                score_str = "\t".join(
-                    [str(round(i, 4)) for i in score]
-                )
+                score_str = "\t".join([str(round(i, 4)) for i in score])
                 float_score = float(score[-1])
                 if float_score > best_score:
                     best_score = float_score
@@ -76,8 +74,8 @@ class Evoluter:
         evaluator = self.evaluator
         dataset = args.dataset
         prompts2mark = {}
-        manual_prompt_path = f"./data/{args.task}/{dataset}/prompts_pre.txt"
-        ape_prompt_path = f"./data/{args.task}/{dataset}/prompts_pre_ape.txt"
+        manual_prompt_path = f"./data/{args.task}/{dataset}/prompts.txt"
+        ape_prompt_path = f"./data/{args.task}/{dataset}/prompts_auto.txt"
         if "gpt" in args.language_model or "opt" in args.language_model:
             model = f"_{args.language_model}"
         else:
@@ -106,7 +104,7 @@ class Evoluter:
             try:
                 self.evaluated_prompts = json.load(open(cache_path, "r"))
                 logger.info(f"---loading prompts from {cache_path}")
-                metric_index =  -1
+                metric_index = -1
                 self.evaluated_prompts = dict(
                     sorted(
                         self.evaluated_prompts.items(),
@@ -129,28 +127,15 @@ class Evoluter:
 
                 with open(cache_path, "w") as wf:
                     self.evaluated_prompts = dict(
-                        sorted(self.evaluated_prompts.items(), key=lambda item: item[1][0])
+                        sorted(
+                            self.evaluated_prompts.items(), key=lambda item: item[1][0]
+                        )
                     )
                     json.dump(self.evaluated_prompts, wf)
                 init_population = [i[1] for i in topk_population]
         elif args.initial == "ape":
             init_population = read_lines(ape_prompt_path)[: args.popsize]
             prompts2mark = {i: "ape" for i in init_population}
-        elif args.initial == "manual":
-            cache_path = f"./data/{args.task}/{dataset}/seed{args.seed}/prompts.json"
-            self.evaluated_prompts = json.load(open(cache_path, "r"))
-            logger.info(f"---loading prompts from {cache_path}")
-            self.evaluated_prompts = dict(
-                sorted(
-                    self.evaluated_prompts.items(), key=lambda item: item[1][0], reverse=True
-                )
-            )
-
-            init_population = read_lines(manual_prompt_path)[: args.popsize]
-            init_population = sorted(
-                init_population, key=lambda x: self.evaluated_prompts[x][0]
-            )
-            prompts2mark = {i: "manual" for i in init_population}
         elif args.initial == "ckpt":
             init_population = []
             logger.info(f"------------load from file {args.ckpt_pop}------------")
@@ -166,14 +151,14 @@ class Evoluter:
                 prompts2mark[prompt] = mark
                 self.evaluated_prompts[prompt] = [i for i in score]
                 init_population.append(prompt)
-            print(init_population)
+            # print(init_population)
             cur_budget = extract_numbers(args.ckpt_pop.split("/")[-1])
             logger.info("cur budget is {}".format(cur_budget))
 
         client = evaluator.client
         llm_config = evaluator.llm_config
 
-        # test LLM 
+        # test LLM
         _ = paraphrase(
             sentence="Hi, I am a student.",
             type=args.llm_type,
@@ -211,7 +196,7 @@ class Evoluter:
                     [str(round(i, 4)) for i in self.evaluated_prompts[p]]
                 )
                 wf.write(f"{prompts2mark[i]}\t{i}\t{score_str}\n")
-        
+
         self.prompts2mark = prompts2mark
         return self.evaluated_prompts, cur_budget
 
@@ -224,7 +209,7 @@ class Evoluter:
                 wf.write(self.prompts2mark[p] + "\t" + p + "\t" + score_str + "\n")
             wf.write(f"best score: {best_score}\n")
             wf.write(f"average score: {avg_score}\n")
-    
+
     def evolute(self):
         raise NotImplementedError
 
@@ -236,7 +221,7 @@ class ParaEvoluter(Evoluter):
     def init_pop(self):
         args = self.args
         logger = self.logger
-        init_prompt_path = f"./data/{args.task}/{args.dataset}/prompts_pre_ape.txt"
+        init_prompt_path = f"./data/{args.task}/{args.dataset}/prompts_auto.txt"
         self.init_population = read_lines(init_prompt_path)[: args.popsize]
         self.prompts2mark = {i: "ape" for i in self.init_population}
         logger.info("initial population:")
@@ -358,6 +343,7 @@ class ParaEvoluter(Evoluter):
             args,
         )
 
+
 class GAEvoluter(Evoluter):
     def __init__(self, args, evaluator):
         super(GAEvoluter, self).__init__(args, evaluator)
@@ -368,7 +354,7 @@ class GAEvoluter(Evoluter):
 
     def evolute(self):
         logger = self.logger
-        self.evaluated_prompts,  cur_budget = self.init_pop()
+        self.evaluated_prompts, cur_budget = self.init_pop()
         evaluator = self.evaluator
         args = self.args
         eval_src = self.eval_src
@@ -466,10 +452,14 @@ class GAEvoluter(Evoluter):
             if args.ga_mode == "topk":
                 double_pop = list(set(self.population + new_pop))
                 double_pop = sorted(
-                    double_pop, key=lambda x: self.evaluated_prompts[x][-1], reverse=True
+                    double_pop,
+                    key=lambda x: self.evaluated_prompts[x][-1],
+                    reverse=True,
                 )
                 self.population = double_pop[: args.popsize]
-                total_score = sum([self.evaluated_prompts[i][-1] for i in self.population])
+                total_score = sum(
+                    [self.evaluated_prompts[i][-1] for i in self.population]
+                )
                 best_score = self.evaluated_prompts[self.population[0]][-1]
             avg_score = total_score / args.popsize
             avg_scores.append(avg_score)
@@ -492,7 +482,7 @@ class GAEvoluter(Evoluter):
                     )
                 )
 
-                test_prompt_num =  3
+                test_prompt_num = 3
                 best_score, best_prompt = evaluate_optimized_prompt(
                     self.population[:test_prompt_num],
                     pop_marks[:test_prompt_num],
@@ -659,7 +649,7 @@ class DEEvoluter(Evoluter):
                         )
                     )
                 )
-                test_prompt_num =3
+                test_prompt_num = 3
                 best_score, best_prompt = evaluate_optimized_prompt(
                     self.population[:test_prompt_num],
                     pop_marks[:test_prompt_num],

@@ -12,7 +12,7 @@ def run(args):
     }
     evaluator = task2evaluator[args.task](args)
     evaluator.logger.info(
-        "---------------------Evoluting prompt-------------------\n"
+        "---------------------Evolving prompt-------------------\n"
     )
     if args.evo_mode == "para" and args.para_mode == "topk":
         ape(args=args, evaluator=evaluator)

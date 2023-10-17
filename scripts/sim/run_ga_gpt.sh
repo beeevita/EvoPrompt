@@ -10,10 +10,11 @@ POPSIZE=10
 NUM_OF_MANUAL=10
 SEED=5
 GA=topk
+LLM_TYPE=davinci
 
 for dataset in asset
 do
-OUT_PATH=outputs/sim/$dataset/gpt/all/ga/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/$GA/davinci
+OUT_PATH=outputs/sim/$dataset/gpt/all/ga/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/$GA/$LLM_TYPE
 for SEED in 15
 do
 python run.py \
@@ -31,8 +32,7 @@ python run.py \
     --random_data 0 \
     --position pre \
     --evo_mode ga \
-    --llm_type davinci \
-    --client \
+    --llm_type $LLM_TYPE \
     --initial all \
     --initial_mode para_topk \
     --ga_mode $GA \

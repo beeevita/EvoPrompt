@@ -8,13 +8,13 @@ BUDGET=10
 POPSIZE=10
 NUM_OF_MANUAL=10
 SEED=5
-TEMPLATE=v9
+TEMPLATE=v1
 initial=all
 
 for dataset in sam
 do
-OUT_PATH=outputs/sum/$dataset/gpt/all/de/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/${TEMPLATE}-sim-unify/davinci
-for SEED in 10 15
+OUT_PATH=outputs/sum/$dataset/gpt/all/de/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/${TEMPLATE}/davinci
+for SEED in 5 10 15
 do
 python run.py \
     --seed $SEED \
@@ -36,8 +36,7 @@ python run.py \
     --initial_mode para_topk \
     --cache_path data/sum/$dataset/seed$SEED/prompts_gpt_tldr.json \
     --template $TEMPLATE \
-    --client \
-    --setting mt \
+    --setting default \
     --output $OUT_PATH/seed$SEED
 done
 python get_result.py -p $OUT_PATH > $OUT_PATH/result.txt

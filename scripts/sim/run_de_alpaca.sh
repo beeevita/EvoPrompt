@@ -12,10 +12,11 @@ NUM_OF_MANUAL=10
 SEED=5
 TEMPLATE=v1
 initial=all
+LLM_TYPE=davinci
 
 for dataset in asset
 do
-OUT_PATH=outputs/sim/$dataset/alpaca/all/de/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/${TEMPLATE}/davinci
+OUT_PATH=outputs/sim/$dataset/alpaca/all/de/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/${TEMPLATE}/$LLM_TYPE
 mkdir -p $OUT_PATH
 for SEED in 5 10 15
 do
@@ -31,7 +32,7 @@ python run.py \
     --popsize $POPSIZE \
     --position pre \
     --evo_mode de \
-    --llm_type davinci \
+    --llm_type $LLM_TYPE \
     --initial $initial \
     --setting default \
     --initial_mode para_topk \

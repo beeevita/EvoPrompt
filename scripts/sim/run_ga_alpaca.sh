@@ -9,11 +9,12 @@ BUDGET=10
 POPSIZE=10
 SEED=5
 GA=topk
+LLM_TYPE=davinci
 
 for dataset in asset
 do
-OUT_PATH=outputs/sim/$dataset/alpaca/all/ga/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/$GA/turbo
-for SEED in 15
+OUT_PATH=outputs/sim/$dataset/alpaca/all/ga/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/$GA/$LLM_TYPE
+for SEED in 5 10 15
 do
 python run.py \
     --seed $SEED \
@@ -27,7 +28,7 @@ python run.py \
     --popsize $POPSIZE \
     --position pre \
     --evo_mode ga \
-    --llm_type turbo \
+    --llm_type $LLM_TYPE \
     --initial all \
     --initial_mode para_topk \
     --ga_mode $GA \

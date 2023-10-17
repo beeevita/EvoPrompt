@@ -10,7 +10,7 @@ POPSIZE=10
 SEED=5
 TEMPLATE=v1
 INITIAL_MODE=para_topk
-LLM_TYPE=davinci
+LLM_TYPE=turbo
 
 for DATASET in cr
 do

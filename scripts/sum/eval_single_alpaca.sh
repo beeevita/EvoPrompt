@@ -23,6 +23,6 @@ python infer.py \
     --llm_type davinci \
     --random_data 0 \
     --initial_mode None \
-    --setting mt \
-    --output outputs/sum/sam/gpt/eval
+    --setting default \
+    --output outputs/sum/sam/eval
 done

@@ -50,10 +50,10 @@ def form_request(data, type, **kwargs):
 
 def llm_init(auth_file="", llm_type='davinci', setting="default"):
     auth = read_yaml_file(auth_file)[llm_type][setting]
-    openai.api_type = "azure"
-    openai.api_base = auth["api_base"]
+    # openai.api_type = auth['api_type']
+    # openai.api_base = auth["api_base"]
     openai.api_key = auth["api_key"]
-    openai.api_version = auth["api_version"]
+    # openai.api_version = auth["api_version"]
     return auth
 
 
@@ -67,20 +67,7 @@ def llm_query(data, client, type, task, **config):
         for batch in tqdm(batch_data):
             retried = 0
             request_data = form_request(batch, model_name, **config)
-            if client:
-                # print(request_data)
-                while True:
-                    try:
-                        response = client.send_request("text-davinci-003", request_data)
-                        response = [r["text"] for r in response]
-                        break
-                    except Exception as e:
-                        error = str(e)
-                        print("retring...", error)
-                        second = extract_seconds(error, retried)
-                        retried = retried + 1
-                        time.sleep(second)
-            elif "davinci" in type:
+            if "davinci" in type:
                 # print(request_data)
                 while True:
                     try:
@@ -96,20 +83,21 @@ def llm_query(data, client, type, task, **config):
                         time.sleep(second)
             else:
                 response = []
-                for data in batch:
+                for data in tqdm(batch):
                     request_data = form_request(data, type, **config)
                     while True:
                         try:
                             result = openai.ChatCompletion.create(**request_data)
                             result = result["choices"][0]["message"]["content"]
+                            # print(result)
                             response.append(result)
+                            break
                         except Exception as e:
                             error = str(e)
                             print("retring...", error)
                             second = extract_seconds(error, retried)
                             retried = retried + 1
                             time.sleep(second)
-                        break
 
             # print(response)
             if task:
@@ -130,11 +118,11 @@ def llm_query(data, client, type, task, **config):
                     request_data = form_request(data, type, **config)
                     response = openai.ChatCompletion.create(**request_data)
                     result = response["choices"][0]["message"]["content"]
+                    break
                 else:
                     request_data = form_request(data, type=type, **config)
                     response = openai.Completion.create(**request_data)["choices"][ 0 ]["text"]
                     result = response.strip()
-                break
             except Exception as e:
                 error = str(e)
                 print("retring...", error)
@@ -157,7 +145,7 @@ def paraphrase(sentence, client, type, **kwargs):
 
     else:
         resample_template = f"Generate a variation of the following instruction while keeping the semantic meaning.\nInput:{sentence}\nOutput:"
-    print(resample_template)
+    # print(resample_template)
     results = llm_query(resample_template, client, type, False, **kwargs)
     return results
 
