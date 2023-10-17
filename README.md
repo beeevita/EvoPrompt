@@ -17,7 +17,7 @@ Large Language Models (LLMs) excel in various tasks, but they rely on carefully 
 
 We instanciate two evolutionary algorithms, GA (genetic algorithm) and DE (diffenrential evolution) to evolve upon the initial population. Evolve your prompts using the following commands: 
 
-Customize the parameter `--llm_type` to use `text-davinci-003`, `gpt-3.5-turbo`,  `gpt-4`, etc. 
+Customize the parameter `--llm_type`  to use `text-davinci-003`, `gpt-3.5-turbo`,  `gpt-4`, etc. 
 
 ```bash
 bash scripts/cls/run_ga_alpaca.sh  # Genetic algorithm 
@@ -140,4 +140,3 @@ If you find this repository helpful, please consider citing our paper:
   year={2023}
 }
 ```
-

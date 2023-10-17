@@ -1,10 +1,8 @@
 {
     "instruction": {
         "opt": "Instruction: <prompt>",
-        "vicuna": "",
         "gpt": "<prompt>",
-        "alpaca": "Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.\n\n### Instruction:\n<prompt>",
-        "vicuna1": "A chat between a curious user and an artificial intelligence assistant.\n###USER:\n"
+        "alpaca": "Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.\n\n### Instruction:\n<prompt>"
     },
     "cls": {
         "icl": {
@@ -81,12 +79,6 @@
                     "Sentence: <input>\nLabel: <output>",
                     "Sentence: What made Jane Goodall famous ?\nLabel: Decription\n\nSentence: Which sex is denied voting rights in Kuwait ?\nLabel: Entity\n\nSentence: What does RCA stand for ?\nLabel: Expression\n\nSentence: Who was Lacan ?\nLabel: Human\n\nSentence: What attracts tourists to Reims ?\nLabel: Location\n\nSentence: What is the gestation period for human pregnancies ?\nLabel: Number\n\nSentence: <input>\nLabel: "
                 ]
-            },
-            "vicuna": {
-                "sst2": [
-                    "Sentence: <input>\nThe sentiment is <output>",
-                    "Sentence: one of the year 's best films , featuring an oscar-worthy performance by julianne moore .\nThe sentiment is positive\n\nSentence: it 's just merely very bad .\nThe sentiment is negative\n\nSentence: <input>\nThe sentiment is "
-                ]
             }
         }
     },
@@ -108,32 +100,6 @@
                 "jfleg": [
                     "### Input:\n<input>\n\n### Response:\n<output>",
                     ""
-                ]
-            },
-            "vicuna": {
-                "asset": [
-                    "<input>\nThe Simplification of the sentence is: <output>",
-                    "Adjacent counties are Marin (to the south), Mendocino (to the north), Lake (northeast), Napa (to the east), and Solano and Contra Costa (to the southeast).\nthe simplification of the sentence is: countries next to it are Marin, Mendocino, Lake, Napa, Solano, and Contra Costa.\n\n<input>\nthe simplification of the sentence is: ",
-                    "Input: History Landsberg prison, which is in the town's western outskirts, was completed in 1910.\nOutput: Landsberg prison is in the west of the town. It was completed in 1910.\n\nInput: <input>\nOutput:<output>"
-                ],
-                "turkcorpus": [
-                    "<input>\nThe Simplification of the sentence is: <output>",
-                    "Input: History Landsberg prison, which is in the town's western outskirts, was completed in 1910.\nOutput: Landsberg prison is in the west of the town. It was completed in 1910.\n\nInput: <input>\nOutput:<output>"
-                ],
-                "wiki-auto": [
-                    "<input>\nThe Simplification of the sentence is: <output>",
-                    "Input: History Landsberg prison, which is in the town's western outskirts, was completed in 1910.\nOutput: Landsberg prison is in the west of the town. It was completed in 1910.\n\nInput: <input>\nOutput:<output>"
-                ]
-            },
-            "vicuna1": {
-                "asset": [
-                    "<input>\n###ASSISTANT:\n <output>",
-                    "Adjacent counties are Marin (to the south), Mendocino (to the north), Lake (northeast), Napa (to the east), and Solano and Contra Costa (to the southeast).\nthe simplification of the sentence is: countries next to it are Marin, Mendocino, Lake, Napa, Solano, and Contra Costa.\n\n<input>\nthe simplification of the sentence is: ",
-                    "Input: History Landsberg prison, which is in the town's western outskirts, was completed in 1910.\nOutput: Landsberg prison is in the west of the town. It was completed in 1910.\n\nInput: <input>\nOutput:<output>"
-                ],
-                "turkcorpus": [
-                    "<input>\n###ASSISTANT: <output>",
-                    "Input: History Landsberg prison, which is in the town's western outskirts, was completed in 1910.\nOutput: Landsberg prison is in the west of the town. It was completed in 1910.\n\nInput: <input>\nOutput:<output>"
                 ]
             },
             "opt": {
@@ -198,16 +164,6 @@
                 "addsub": [
                     "Q: <input>\nA: <output>",
                     "Q: Q: <input>\nA: <output>"
-                ]
-            },
-            "vicuna": {
-                "gsm8k": [
-                    "<input>\n"
-                ]
-            },
-            "vicuna1": {
-                "gsm8k": [
-                    "<input>\n###ASSISTANt:\n <output>"
                 ]
             }
         }

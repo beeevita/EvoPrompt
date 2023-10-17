@@ -9,16 +9,6 @@ def cal_bleu(bleu_model,output_texts, ref_texts):
     bleu_score = bleu_model.corpus_score(output_texts, ref_texts).score
     return bleu_score
 
-def cal_comet(comet_model,output_texts, source_texts, ref_texts):
-    comet_data = [{
-        "src": s,
-        "mt": o,
-        "ref": r
-    } for s, o, r in zip(source_texts, output_texts, ref_texts)]
-    comet_score = comet_model.predict(comet_data, batch_size=32)[1]
-    return comet_score
-
-
 def cal_cls_score(pred_list, label_list,metric='acc'):
     pred_list = [p.lower() for p in pred_list]
     label_list = [l.lower() for l in label_list]

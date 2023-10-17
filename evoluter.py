@@ -349,7 +349,7 @@ class ParaEvoluter(Evoluter):
         avg_scores = [str(round(i, 4)) for i in avg_scores]
         self.logger.info(f"best_scores: {','.join(best_scores)}")
         self.logger.info(f"avg_scores: {','.join(avg_scores)}")
-        self.logger.info(f"----------testing step{step} population----------")
+        self.logger.info(f"----------testing step {step} population----------")
         best_test_score, best_test_prompt = evaluate_optimized_prompt(
             self.population[0:1],
             self.marks[0:1],
@@ -478,7 +478,7 @@ class GAEvoluter(Evoluter):
             self.write_step(step, best_score, avg_score)
 
             if step == args.budget - 1:
-                logger.info(f"----------testing step{step} self.population----------")
+                logger.info(f"----------testing step {step} self.population----------")
                 pop_marks = [self.prompts2mark[i] for i in self.population]
                 pop_scores = [self.evaluated_prompts[i] for i in self.population]
                 self.population, pop_scores, pop_marks = (
@@ -501,7 +501,7 @@ class GAEvoluter(Evoluter):
                     args,
                 )
                 logger.info(
-                    f"----------step{step} best score: {best_score}, best prompt: {best_prompt}----------"
+                    f"----------step {step} best score: {best_score}, best prompt: {best_prompt}----------"
                 )
 
         best_scores = [str(i) for i in best_scores]
@@ -646,7 +646,7 @@ class DEEvoluter(Evoluter):
             if ((step + 1) % args.write_step == 0 and args.task == "cls") or (
                 step == args.budget - 1
             ):
-                logger.info(f"----------testing step{step} self.population----------")
+                logger.info(f"----------testing step {step} self.population----------")
                 pop_marks = [self.prompts2mark[i] for i in self.population]
                 pop_scores = [self.evaluated_prompts[i] for i in self.population]
                 self.population, pop_scores, pop_marks = (

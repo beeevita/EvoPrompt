@@ -26,7 +26,6 @@ def read_yaml_file(file_path):
     return config
 
 def remove_punctuation(s):
-    # 创建一个转换表，将所有的标点符号映射为 None
     translator = str.maketrans('', '', string.punctuation)
     return s.translate(translator)
 
