@@ -21,7 +21,7 @@ python run.py \
     --seed $SEED \
     --dataset $DATASET \
     --task cls \
-    --batch-size 32 \
+    --batch-size 64 \
     --prompt-num 0 \
     --sample_num 500 \
     --language_model alpaca \

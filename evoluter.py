@@ -191,11 +191,11 @@ class Evoluter:
         for i in self.population:
             logger.info(i)
         with open(f"{out_path}/step0_pop_para.txt", "w") as wf:
-            for i in self.population:
+            for prompt in self.population:
                 score_str = "\t".join(
-                    [str(round(i, 4)) for i in self.evaluated_prompts[p]]
+                    [str(round(i, 4)) for i in self.evaluated_prompts[prompt]]
                 )
-                wf.write(f"{prompts2mark[i]}\t{i}\t{score_str}\n")
+                wf.write(f"{prompts2mark[prompt]}\t{prompt}\t{score_str}\n")
 
         self.prompts2mark = prompts2mark
         return self.evaluated_prompts, cur_budget
