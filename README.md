@@ -21,16 +21,27 @@ We instanciate two evolutionary algorithms, GA (genetic algorithm) and DE (diffe
 Customize the parameter `--llm_type` to use `text-davinci-003`, `gpt-3.5-turbo`, `gpt-4`.
 
 ```bash
+# understanding task on Alpaca
 bash scripts/cls/run_ga_alpaca.sh  # Genetic algorithm
 bash scripts/cls/run_de_alpaca.sh  # Differential evolution
+
+# simplification task on Alpaca
+bash scripts/sim/run_de_alpaca.sh
+bash scripts/sim/run_ga_alpaca.sh
+
+# summarization task on Alpaca
+bash scripts/sum/run_de_alpaca.sh
+bash scripts/sum/run_ga_alpaca.sh
 ```
 
-### Inference
+### 🤔 Inference
 
 To evaluate a single instruction, run the following:
 
 ```bash
-bash scripts/cls/eval_single_alpaca.sh  # cls on alpaca
+bash scripts/cls/eval_single_alpaca.sh  # understanding task on alpaca
+bash scripts/sim/eval_single_alpaca.sh  # simplification
+bash scripts/sum/eval_single_alpaca.sh  # summarization
 ```
 
 ### 📌 Notes
@@ -113,14 +124,6 @@ For the pipeline of EvoPrompt, there are mainly three steps as follows, while fo
 - **More fine-grained metrics**: to select prompt maintained in the population, we need to evaluate the performance on dev set. However, for understanding tasks, metrics such as accuracy or F1 are coarse-grained, sometimes it's not accurate anough to select which to keep in the population since the performances of them are the same.
 - **More complex tasks** are left to explore.
 
-## Acknowledgements
-
-Our codebase is based on the following repos. Thanks for open-sourcing!
-
-- [CoT-hub](https://github.com/FranxYao/chain-of-thought-hub)
-- [APE](https://github.com/keirp/automatic_prompt_engineer)
-- [LM-BFF](https://github.com/princeton-nlp/LM-BFF)
-
 ## ☑️ TODO
 
 - [ ] EvoPrompt for BBH tasks
@@ -137,6 +140,14 @@ If you find this repository helpful, please consider citing our paper:
   year={2023}
 }
 ```
+
+## Acknowledgements
+
+Our codebase is based on the following repos. Thanks for open-sourcing!
+
+- [CoT-hub](https://github.com/FranxYao/chain-of-thought-hub)
+- [APE](https://github.com/keirp/automatic_prompt_engineer)
+- [LM-BFF](https://github.com/princeton-nlp/LM-BFF)
 
 ## Contributing
 
