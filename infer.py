@@ -82,10 +82,3 @@ if __name__ == "__main__":
     )
     print(scores)
 
-    # baseline
-    # scores = []
-    # for mode in ['mi', 'ni']:
-    # # for mode in ['ps']:
-    #     scores.append(eval_cls_baseline(evaluator,mode, eval_args))
-    # print(scores)
-    
