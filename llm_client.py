@@ -47,13 +47,15 @@ def form_request(data, type, **kwargs):
     # print(request_data)
     return request_data
 
-
-def llm_init(auth_file="", llm_type='davinci', setting="default"):
+def llm_init(auth_file="../auth.yaml", llm_type='davinci', setting="default"):
     auth = read_yaml_file(auth_file)[llm_type][setting]
-    # openai.api_type = auth['api_type']
-    # openai.api_base = auth["api_base"]
+    try:
+        openai.api_type = auth['api_type']
+        openai.api_base = auth["api_base"]
+        openai.api_version = auth["api_version"]
+    except:
+        pass
     openai.api_key = auth["api_key"]
-    # openai.api_version = auth["api_version"]
     return auth
 
 
