@@ -74,5 +74,6 @@ def parse_args():
     parser.add_argument(
         "--sel_mode", type=str, choices=["wheel", "random", "tour"], default="wheel", help='selection strategy for parents, only used for GA'
     )
+    parser.add_argument
     args = parser.parse_args()
     return args

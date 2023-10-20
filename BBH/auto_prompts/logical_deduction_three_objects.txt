@@ -1,0 +1,20 @@
+interpret the paragraph and choose the correct option that matches the description.
+read the description of three objects in a fixed order and determine which of the three options is the correct statement based on the given information.
+read the description and choose the option that best describes the arrangement of objects in the given description.
+identify which of the given options correctly describes the arrangement of the three objects, based on the information given.
+interpret the description in the given paragraph and choose the correct option from the given choices.
+interpret the given input-output pairs and select the correct output given the input.
+identify the correct option based on the description given in each paragraph.
+Read the paragraph carefully and select the option that accurately describes the order of the objects mentioned in the paragraph.
+Read the given paragraphs and identify which of the given options correctly describes the relative order of the objects mentioned in the paragraphs.
+read the description and choose the option that best matches the description.
+analyze the given information and choose the correct answer from the given options based on the description.
+look at the given information and identify which option in the given options is the correct answer.
+provide the correct option based on the given information.
+read the descriptions and select the correct option that reflects the logical order of the objects.
+choose the option that best describes the ordering of the objects in the given paragraph.
+read the given paragraphs and choose the answer that correctly describes the arrangement of the objects according to the given information.
+identify which of the options provided is true based on the given information.
+identify the option that best describes the objects in the paragraphs according to the given descriptions.
+analyze the given paragraphs and identify the object that is indicated as being in the second-newest, the newest, or the leftmost position.
+interpret the given information and select the correct option from the provided choices that best describes the order of the objects described.

@@ -32,16 +32,25 @@ bash scripts/sim/run_ga_alpaca.sh
 # summarization task on Alpaca
 bash scripts/sum/run_de_alpaca.sh
 bash scripts/sum/run_ga_alpaca.sh
+
+# for BBH tasks
+cd BBH
+bash scripts/run_de_cot.sh  # DE 
+bash scripts/run_ga_cot.sh  # GA
 ```
 
 ### 🤔 Inference
 
-To evaluate a single instruction, run the following:
+To evaluate a single instruction, run the following, set the argument `--content` to evaluate a performance of a specific prompt
 
 ```bash
 bash scripts/cls/eval_single_alpaca.sh  # understanding task on alpaca
 bash scripts/sim/eval_single_alpaca.sh  # simplification
 bash scripts/sum/eval_single_alpaca.sh  # summarization
+
+# BBH
+cd BBH
+bash scripts/eval.sh  # few-shot evaluation
 ```
 
 ### 📌 Notes
@@ -92,10 +101,9 @@ For the pipeline of EvoPrompt, there are mainly three steps as follows, while fo
 
 ```python
 .
-├── LICENSE
-├── README.md
 ├── args.py
 ├── auth.yaml
+├── BBH  # code for BBH tasks
 ├── data  # dataset, templates used
 │   ├── cls
 │   ├── sim
@@ -124,9 +132,6 @@ For the pipeline of EvoPrompt, there are mainly three steps as follows, while fo
 - **More fine-grained metrics**: to select prompt maintained in the population, we need to evaluate the performance on dev set. However, for understanding tasks, metrics such as accuracy or F1 are coarse-grained, sometimes it's not accurate anough to select which to keep in the population since the performances of them are the same.
 - **More complex tasks** are left to explore.
 
-## ☑️ TODO
-
-- [ ] EvoPrompt for BBH tasks
 
 ## ☕️ Citation
 

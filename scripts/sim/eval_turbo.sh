@@ -14,7 +14,6 @@ python infer.py \
     --language_model gpt \
     --llm_type turbo \
     --setting default \
-    --initial_mode None \
-    --output output/sim/$dataset/eval \
+    --output output/sim/$dataset/eval/turbo \
     --content "Simplify the text."
 done

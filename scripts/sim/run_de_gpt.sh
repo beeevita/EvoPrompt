@@ -25,8 +25,6 @@ python run.py \
     --language_model gpt \
     --budget $BUDGET \
     --popsize $POPSIZE \
-    --num_of_manual $POPSIZE \
-    --random_data 0 \
     --position pre \
     --evo_mode de \
     --llm_type davinci \

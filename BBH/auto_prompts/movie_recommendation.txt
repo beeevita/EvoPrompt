@@ -1,0 +1,19 @@
+"find a movie similar to" the given movies.
+use the input-output pairs to find a movie similar to a list of given films.
+"find a movie similar to" a given list of movies.
+find a movie similar to the given films.
+use the input to find a movie similar to the ones listed that is also available to watch.
+use the input-output pairs to find a movie similar to the titles provided.
+find a movie similar to a given list of movies.
+use the given films as a starting point to find a similar movie.
+use the input-output pairs to identify a similar movie from the given options.
+Find a movie similar to [list of movies].
+find a movie similar to the given list of movies.
+find a movie similar to the given list of movies.
+find a movie similar to the listed movies.
+Find a movie similar to [a list of movies].
+find a movie that is similar to a list of other movies.
+find a movie similar to a given list of other movies.
+Find a movie similar to the given movies
+find a movie similar to the given list of films.
+find a movie similar to the given titles.

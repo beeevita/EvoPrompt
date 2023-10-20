@@ -1,0 +1,13 @@
+sort a given list of words alphabetically. The friend correctly followed the instruction and sorted the given lists alphabetically.
+"Sort the following words alphabetically". The given input-output pairs show that the instruction was followed successfully.
+sort words alphabetically.
+sort the words in a given list alphabetically.
+sort a list of words alphabetically.
+sort the given words alphabetically.
+sort the following words alphabetically.
+sort the words alphabetically, and the friend successfully did that for each set of words.
+sort the given list of words alphabetically.
+sort the following words alphabetically.
+Sort the following words alphabetically.
+Sort the following words alphabetically.
+Sort the following words alphabetically.

@@ -1,0 +1,20 @@
+identify the correct answer from a list of options given a set of instructions.
+provide input-output pairs based on a given scenario. The friend followed the instruction correctly and produced the input-output pairs as expected.
+use the given input-output pairs to determine the output for a given input.
+follow a given set of conditions and identify the output at the end of the situation.
+use the given information to determine which option is the correct answer.
+examine the given input and determine the appropriate output based on the input information.
+Follow a pattern of input-output pairs in order to determine the final output of a given scenario.
+consider the starting states of the scenarios given, then follow the sequence of trades, swaps, or partner switches to determine the output.
+identify the correct answer from the given options based on the information given in the scenario.
+use input-output pairs to demonstrate understanding of an instruction.
+observe the pattern of the input-output pairs and use that pattern to determine the output for each given input.
+"Consider three people, Alice, Bob, and Claire, and an activity they are engaging in. Describe the activity in terms of the three people's starting positions and then provide a series of swaps, which can be between any two people.
+provide input-output pairs for a given scenario.
+analyze the given situation and use the input-output pairs to correctly answer the question posed at the end of each example.
+use the input-output pairs to provide an answer to the question posed in the given scenario.
+identify the final partner after each trade.
+analyze the given information to determine who is holding or dancing with which item/person at the end of the activity.
+have the friend produce input-output pairs for scenarios in which people are exchanging objects or partners.
+Think of a scenario where 3 people are initially assigned to different roles. Then, imagine that pairs of people periodically switch roles. At the end, determine which of the 3 people is in which role.
+Provide input-output pairs that demonstrate an understanding of the concept of swapping.

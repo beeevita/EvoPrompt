@@ -7,14 +7,11 @@ export CUDA_VISIBLE_DEVICES=0
 
 BUDGET=10
 POPSIZE=10
-NUM_OF_MANUAL=10
-SEED=5
 GA=topk
-TEMPLATE=v1
 
 for dataset in sam
 do
-OUT_PATH=outputs/sum/$dataset/alpaca/all/ga/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/$GA/$TEMPLATE/davinci
+OUT_PATH=outputs/sum/$dataset/alpaca/all/ga/bd${BUDGET}_top${POPSIZE}_para_topk_init/$GA/davinci
 for SEED in 10 15
 do
 python run.py \
@@ -28,8 +25,6 @@ python run.py \
     --language_model alpaca \
     --budget $BUDGET \
     --popsize $POPSIZE \
-    --num_of_manual $NUM_OF_MANUAL \
-    --random_data 0 \
     --position pre \
     --evo_mode ga \
     --llm_type davinci \
@@ -38,7 +33,6 @@ python run.py \
     --initial_mode para_topk \
     --ga_mode $GA \
     --cache_path data/sum/$dataset/seed${SEED}/prompts_batched.json \
-    --template $TEMPLATE \
     --output $OUT_PATH/seed$SEED
 done
 python get_result.py -m -p $OUT_PATH > $OUT_PATH/result.txt

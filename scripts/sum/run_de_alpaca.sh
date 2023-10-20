@@ -7,14 +7,12 @@ export CUBLAS_WORKSPACE_CONFIG=:16:8
 BUDGET=10
 
 POPSIZE=10
-NUM_OF_MANUAL=10
-SEED=5
 TEMPLATE=v1
 initial=all
 
 for dataset in sam
 do
-OUT_PATH=outputs/sum/$dataset/alpaca/all/de/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/${TEMPLATE}/davinci
+OUT_PATH=outputs/sum/$dataset/alpaca/all/de/bd${BUDGET}_top${NUM_OPOPSIZEF_MANUAL}_para_topk_init/${TEMPLATE}/davinci
 for SEED in 5 10 15
 do
 python run.py \
@@ -28,8 +26,6 @@ python run.py \
     --language_model alpaca \
     --budget $BUDGET \
     --popsize $POPSIZE \
-    --num_of_manual $NUM_OF_MANUAL \
-    --random_data 0 \
     --position pre \
     --evo_mode de \
     --llm_type davinci \

@@ -4,8 +4,7 @@ __pycache__/
 *outputs*/
 logs/
 prompts*.json
-BBH/
-__*.json
+BBH/data/*.json
 
 *.py[cod]
 *$py.class

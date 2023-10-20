@@ -3,12 +3,10 @@ set -ex
 export CUBLAS_WORKSPACE_CONFIG=:16:8  
 export CUDA_VISIBLE_DEVICES=1
 
-BUDGET=1
-POPSIZE=3
-NUM_OF_MANUAL=3
+
 SEED=15
 
-for dataset in turkcorpus
+for dataset in asset
 do
 python infer.py \
     --seed $SEED \
@@ -18,12 +16,6 @@ python infer.py \
     --batch-size 16 \
     --prompt-num 0 \
     --language_model  alpaca \
-    --budget $BUDGET \
-    --popsize $POPSIZE \
-    --num_of_manual $NUM_OF_MANUAL \
-    --initial_mode None \
-    --random_data 0 \
-    --output outputs/sim/eval \
-    --initial manual \
+    --output outputs/sim/eval/alpaca \
     --content "Simplify the text."
 done

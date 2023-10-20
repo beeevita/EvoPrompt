@@ -1,0 +1,19 @@
+determine which geometric shape is represented by the given SVG path element.
+determine the shape drawn by a given SVG path element.
+identify which of the given shapes the SVG path element would draw.
+identify what shape the SVG path element draws.
+identify the shape drawn by the SVG path element.
+identify what type of shape the SVG path element was drawing.
+identify the shape drawn by the SVG path element.
+identify which of the given options the SVG path element draws.
+draw a shape based on the given SVG path element.
+identify the shape that the SVG path element draws.
+identify what the SVG path element is drawing.
+use the SVG path elements to draw shapes.
+identify which of the options corresponded to the given SVG path element.
+interpret the SVG path element and choose the correct answer that describes the shape it draws.
+draw a shape based on the SVG path element given.
+interpret the SVG path element and identify which shape it was drawing.
+identify the shape that was drawn based on the SVG path element.
+use the SVG path element to draw a particular shape.
+use SVG path elements to draw shapes.

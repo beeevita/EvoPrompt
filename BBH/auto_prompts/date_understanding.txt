@@ -1,0 +1,20 @@
+determine the correct date in MM/DD/YYYY format for the given situation.
+use the given information to answer the question and determine the correct output.
+produce input-output pairs that involved calculating the date of a given day a certain number of days in the past or future.
+answer questions about dates in MM/DD/YYYY format.
+produce input-output pairs of a date question and its answer, based on a given date and time, and an amount of time given to add or subtract from the given date.
+calculate the date one week from today or one year ago from today, depending on the context of the question.
+use the given information to determine the date one week from today in MM/DD/YYYY.
+identify the correct output for given input-output pairs.
+calculate the date one week ago from today or one week from today depending on the situation given.
+Calculate the date one week from today, one year ago from today, and one week ago from today given a specific date.
+calculate the date one week from today or one year ago from today, depending on the question.
+calculate the date one week from or one year ago from the given date.
+answer the questions using the correct output from the given options.
+correctly identify the output based on the input.
+determine the date of the input-output pairs given the date from the problem statement.
+Given an input of a date, determine the date one week ago from the given date.
+calculate the date one week from today (or one year ago from today) for the given date.
+calculate the date one week from or one week ago from a given date.
+calculate the date one week ago from today in MM/DD/YYYY format.
+determine the correct answer to a given date-related question based on the given input and the available options.

@@ -1,0 +1,16 @@
+have the friend create input-output pairs where the output is either Yes or No depending on whether or not the instructions will lead back to the starting point.
+provide a yes or no answer based on the given input instructions.
+give a yes or no answer depending on whether following the instructions would return the person to the starting point.
+have the friend create input-output pairs that asked if they would return to the starting point based on a given set of instructions, and the output was either "Yes" or "No" depending on if the instructions would cause them to return to the
+have the friend determine whether or not the given input-output pairs would return them to the starting point.
+always face forward and take a certain number of steps in a specific direction. The friend produced the input-output pairs based on the instruction given.
+return to the starting point. The inputs with "Yes" as the output demonstrate that the instructions successfully lead the user back to the starting point. The inputs with "No" as the output demonstrate that the instructions do not successfully lead the user back to
+turn around and take 4 steps, which would take the friend back to the starting point.
+turn around and take 4 steps each time. In the last example, the person turned around twice and took 4 steps each time, so they returned to the starting point.
+provide input-output pairs related to the instructions given. The instructions were to move in a certain direction a certain number of steps, and the output was whether or not the starting point was reached.
+always face forward.
+Always face forward.
+always face forward and follow a set of steps. The input-output pairs demonstrate that the friend correctly interpreted the instruction and correctly determined the result of following the instructions.
+always face forward and move in a straight line.
+always face forward.
+have the friend evaluate a series of input-output pairs to determine if following the instructions would lead back to the starting point. The results show that following the instructions would not lead back to the starting point in the first four examples, but in the fifth

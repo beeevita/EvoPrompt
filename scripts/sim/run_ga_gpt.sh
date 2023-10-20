@@ -7,15 +7,13 @@ export CUDA_VISIBLE_DEVICES=0
 
 BUDGET=10
 POPSIZE=10
-NUM_OF_MANUAL=10
-SEED=5
 GA=topk
 LLM_TYPE=davinci
 
 for dataset in asset
 do
-OUT_PATH=outputs/sim/$dataset/gpt/all/ga/bd${BUDGET}_top${NUM_OF_MANUAL}_para_topk_init/$GA/$LLM_TYPE
-for SEED in 15
+OUT_PATH=outputs/sim/$dataset/gpt/all/ga/bd${BUDGET}_top${POPSIZE}_para_topk_init/$GA/$LLM_TYPE
+for SEED in 5 10 15
 do
 python run.py \
     --seed $SEED \
@@ -28,8 +26,6 @@ python run.py \
     --language_model gpt \
     --budget $BUDGET \
     --popsize $POPSIZE \
-    --num_of_manual $NUM_OF_MANUAL \
-    --random_data 0 \
     --position pre \
     --evo_mode ga \
     --llm_type $LLM_TYPE \
