@@ -13,7 +13,7 @@ if __name__ == "__main__":
     set_seed(args.seed)
 
     client = None
-    llm_config = llm_init(f"./auth.yaml", args.llm_type, args.setting)
+    llm_config = llm_init(f"../auth.yaml", args.llm_type, args.setting)
 
     out_path = args.output
     logger = setup_log(os.path.join(out_path, f"eval.log"))
