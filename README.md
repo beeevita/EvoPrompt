@@ -1,6 +1,6 @@
 # 🧬 EvoPrompt
 
-This is the implementation of the paper [Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers](https://arxiv.org/abs/2309.08532)
+This is the official implementation of the paper [Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers](https://arxiv.org/abs/2309.08532)
 
 ## 📃 Abstract
 
