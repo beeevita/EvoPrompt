@@ -11,7 +11,7 @@ Large Language Models (LLMs) excel in various tasks, but they rely on carefully 
 ### ⚙️ Preparation
 
 1. **Environmental** settings: `pip install -r requirements.txt`
-2. **Data** download: The test data for the language understanding task can be found [here](https://nlp.cs.princeton.edu/projects/lm-bff/datasets.tar). Put the test file in the folder `./data/cls/{dataset_name}`
+2. **Data** download: The test data for the language understanding task can be found [here](https://nlp.cs.princeton.edu/projects/lm-bff/datasets.tar). Put the test file in the folder `./data/cls/{dataset_name}`. For datasets of BBH, download from the repo [CoT-hub](https://github.com/FranxYao/chain-of-thought-hub/tree/main/BBH/data) and put them in the folder `BBH/data/{dataset_name}`.
 3. **OpenAI API key** required: add your OpenAI API key and other related settings in the file `auth.yaml`
 
 ### ♻ Evolution
