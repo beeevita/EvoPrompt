@@ -309,7 +309,7 @@ class CLSEvaluator(Evaluator):
             else args.dev_file
         )
         args.test_file = (
-            f"/ml-dl/v-qingyanguo/data/cls/data/processed/{args.dataset}/test.txt"
+            f"./data/cls/data/{args.dataset}/test.txt"
             if args.test_file is None
             else args.test_file
         )
