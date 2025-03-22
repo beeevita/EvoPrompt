@@ -1,6 +1,6 @@
 # 🧬 EvoPrompt
 
-This is the official implementation of the paper [Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers](https://arxiv.org/abs/2309.08532)
+This is the official implementation of the paper [Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers](https://openreview.net/pdf?id=ZG3RaNIsO8), accepted by ICLR'2024. 
 
 ## 📃 Abstract
 
@@ -138,11 +138,13 @@ For the pipeline of EvoPrompt, there are mainly three steps as follows, while fo
 If you find this repository helpful, please consider citing our paper:
 
 ```
-@article{guo2023connecting,
-  title={Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers},
-  author={Guo, Qingyan and Wang, Rui and Guo, Junliang and Li, Bei and Song, Kaitao and Tan, Xu and Liu, Guoqing and Bian, Jiang and Yang, Yujiu},
-  journal={arXiv preprint arXiv:2309.08532},
-  year={2023}
+@inproceedings{
+guo2024connecting,
+title={Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers},
+author={Qingyan Guo and Rui Wang and Junliang Guo and Bei Li and Kaitao Song and Xu Tan and Guoqing Liu and Jiang Bian and Yujiu Yang},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=ZG3RaNIsO8}
 }
 ```
 
